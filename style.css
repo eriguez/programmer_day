@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light;
+  background: #f5f7fa
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #0a2e66;
+  /*
+   background:
+    radial-gradient(circle at 50% 115%, #1b0750 0, transparent 45%),
+    radial-gradient(circle at 12% 5%, #063553 0, transparent 33%), #050612;
+  */
+
+  font-family: system-ui, sans-serif;
+}
+
+.experience { width: min(100vw, 1200px); }
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 12 / 7;
+  max-height: 100vh;
+  cursor: crosshair;
+  touch-action: manipulation;
+}
+@media (max-width: 600px) {
+  .experience { width: 100vw; }
+}
